@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML TAG</title>
+<link rel="stylesheet" href="./css.css">
+  </head>
+  <body>
+<h1>자주 사용하는 HTML Tag 모음</h1>
+
+<h2>1.제목과 단락</h2>
+<ul>
+<li>h1~h6 : 헤딩 태그, p : 단락 태그, br : 줄바꿈 태그</li>
+</ul>
+<h2>2.텍스트 관련 태그(Inline text semantics)</h2>
+<ul>
+  <li>b : 굵게, i : 기울기체 , u: 밑줄, s : 중간선</li>
+</ul>
+
+<h2>3.앵커 요소(The Anchor element)</h2>
+<ul>
+<li>앵커(a) : 다른 문서로 이동할 수 있는 링크 생성, href : 링크</li>
+<p>href="#ID속성" : 내부에서 사용 시</p>
+기타속성 : <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">참고사이트</a> <br>
+</ul>
+
+<h2>4.의미없는 요소를 묶기 위한 태그(Container)</h2>
+<ul>
+<li>목적 : 서버에서 주는 데이터를 담기 위함, 스타일을 주기 위함<br></li>
+div : block-level<br>
+span : inline-level
+</ul>
+
+<h2>5.리스트</h2>
+<ul>
+<li>ul : 순서가 없는 리스트(순서와 상관없을 때)<br></li>
+<li>ol : 순서가 있는 리스트 <br></li>
+<li>dl : 용어 설명 리스트, dt : 용어를 구분, dd : 용어의 정의</li>
+</ul>
+<h2>6.이미지 요소</h2>
+<ul>
+<li>img : 문서에 이미지 삽입, src: 이미지 경로 지정, alt : 이미지 대체 텍스트 입력, width/height : 이미지 크기</li>
+<p><img src="./24세 동현.jpg" alt="김동현"></p>
+</ul>
+
+<h2>7.테이블 요소</h2>
+<ul>
+<li>td, th : 데이터 셀<br></li>
+<li>tr : 행<br></li>
+<li>table : 표</li>
+</ul>
+
+<h2>8.폼 요소:서버에 데이터를 전달하기 위한 요소들</h2>
+<form class="" action="index.html" method="post">
+
+
+<h3>8.1 input : 다양한 type 속성으로 여러 종류의 입력 양식을 나타냄</h3>
+type 속성 예시 : text, password, radio, checkbox, file, submit, image, button...<br>
+<input type="text" name="텍스트 타입 input" placeholder="영문자로 써주세요"value="">
+<input type="password" name="암호 타입 input" value=""><br>
+성별 : 남자<input type="radio" name="gender"> 여 <input type="radio", name="gender">
+<h3>8.2 select, textarea, button</h3>
+select : 선택 목록 상자(속성 : option)<br>
+textarea : 여러 줄 텍스트 입력 상자 <br>
+button : 사용자가 클릭 가능한 버튼(버튼 안에 텍스트 입력 가능) <br>
+<h3>8.3 label, fieldset, legend, form </h3>
+<ul>
+<dl class="label">
+  <dt>label</dt>
+<dd>
+폼과 <strong>연결</strong> 시켜주기 위함.
+웹 접근성 향상에 도움이 된다.(필수적)
+</dd>
+</dl>
+- label for로 감싸기, 원하는 폼에 id로 속성과 추가 <br>
+</ul>
+
+<ul>
+fieldset : 여러 개의 폼 요소를 '그룹화'하여 구조적으로 만들기 위해 사용 <br>
+legend : 폼 요소의 제목으로 fieldset 요소 내부에 작성 <br>
+</ul>
+<ul>
+  form : 폼 데이터를 그룹화하여 '서버'에 전송 <br>
+- action : 폼 데이터를 처리하기 위한 서버의 주소 <br>
+- method : 데이터를 전송하는 방식을 지정(get:주소창에 데이터 보임, post:주소창에 데이터X:민감한 정보에 사용) <br>
+</ul>
+</form>
+
+<h3>*참고링크</h3>
+<h4>HTML</h4>
+<ul>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">https://developer.mozilla.org/en-US/docs/Web/HTML/Element</a><br>
+<a href="http://html5doctor.com/element-index">http://html5doctor.com/element-index</a><br>
+<a href="https://www.w3schools.com/tags/default.asp">https://www.w3schools.com/tags/default.asp</a>
+</ul>
+
+<h4>CSS</h4>
+<ul>
+<a href="http://www.csszengarden.com/">http://www.csszengarden.com/</a>
+</ul>
+
+  </body>
+</html>
