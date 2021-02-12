@@ -27,4 +27,22 @@ ex) `Hello ${name} you are ${age} years old`
 
 5. DOM(Document Object Module)
 
-모든 html 태그를 자바스크립트로 옮겨 객체로 만듦
+모든 html 태그를 자바스크립트로 옮겨 객체로 만듦(번외. css는 #으로)
+ex) const = document.getElementByID("");
+const = document.getElementByClassName("");
+const = document.querySelector("class를 찾고 싶으면 : .class/ id를 찾고싶으면 : #id")
+
+6. 자바스크립트는 이벤트에 반응하기 위해 만들어짐
+
+ex)
+window.addEventListener("resize", hadleResize);
+- 윈도우가 resize될 때, hadelResize(위에서 만든 함수)를 호출
+- 주의! hadelResize()로 추가할 시 조건에 상관없이 즉시 호출되므로 ()를 쓰지않는다
+
+7. 반대로 HTML에서 가져오지 않고 생성하는법
+
+const = document.createElement("")
+
+8. 기타
+
+집어넣기 : appendChild
